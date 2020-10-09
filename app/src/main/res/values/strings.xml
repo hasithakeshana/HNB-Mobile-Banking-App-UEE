@@ -51,6 +51,12 @@
     <string name="un_available_balance">Un-Available Balance</string>
     <string name="nic">NIC</string>
     <string name="currency">Currency</string>
+    <string name="registerlink"><u>Don\'t have an account? Register</u></string>
+    <string name="login">Login</string>
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
     <string-array name="select_account_names">
         <item>John Doe</item>
     </string-array>

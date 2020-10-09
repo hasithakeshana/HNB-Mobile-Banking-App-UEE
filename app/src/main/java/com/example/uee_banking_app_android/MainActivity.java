@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private DBHelper dbHelper;
     private EditText usernameInput;
     private EditText passwordInput;
+    private android.widget.EditText edtPassword;
     public static Boolean autoFill = true;    //Auto fill Login
 
     @Override
@@ -45,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
             editor.apply();
         }
 
+    }
+
+    public void viewPassword(View v)
+    {
+        edtPassword = (EditText) findViewById(R.id.password);
+        edtPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
     }
 
     public void login(View view) {
