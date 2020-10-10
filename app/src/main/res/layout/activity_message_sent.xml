@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/message_sent_blur"
+    android:background="@drawable/messagesentblur"
     tools:context=".MessageSent">
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/check_button"
+        android:layout_width="63dp"
+        android:layout_height="43dp"
+        android:background="@drawable/check_ic"
         android:onClick="ok"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.651" />
+        app:layout_constraintVertical_bias="0.611" />
 </androidx.constraintlayout.widget.ConstraintLayout>

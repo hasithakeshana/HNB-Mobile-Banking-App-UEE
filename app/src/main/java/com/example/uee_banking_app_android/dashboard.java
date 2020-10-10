@@ -49,4 +49,9 @@ public class dashboard extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void composeMessage(View view){
+        Intent intent = new Intent(this, ComposeMessage.class);
+        startActivity(intent);
+    }
+
 }
