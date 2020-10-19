@@ -23,12 +23,13 @@
                 android:layout_width="0dp"
                 android:layout_height="111dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/credit_card_add_background"
+                android:background="#E5E7E9"
                 android:onClick="addProviderButton"
                 android:text=""
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,29 +37,25 @@
                 android:id="@+id/textView20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="24dp"
                 android:text="Dialog Mobile "
                 android:textColor="#014590"
                 android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView9"
-                app:layout_constraintEnd_toEndOf="@+id/textView9"
-                app:layout_constraintHorizontal_bias="0.105"
-                app:layout_constraintStart_toStartOf="@+id/textView9"
-                app:layout_constraintTop_toTopOf="@+id/textView9"
-                app:layout_constraintVertical_bias="0.481" />
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="91dp"
                 android:layout_height="78dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="28dp"
                 android:background="@color/default_light_gray_background"
                 android:backgroundTint="@color/transp"
                 android:foreground="@drawable/dialog_logo"
-                app:layout_constraintBottom_toBottomOf="@+id/textView9"
-                app:layout_constraintEnd_toEndOf="@+id/textView9"
-                app:layout_constraintHorizontal_bias="0.855"
-                app:layout_constraintStart_toEndOf="@+id/textView20"
-                app:layout_constraintTop_toTopOf="@+id/textView9"
-                app:layout_constraintVertical_bias="0.448" />
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView34"
@@ -67,7 +64,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/credit_card_add_background"
+                android:background="#E5E7E9"
                 android:text=""
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.51"
@@ -78,27 +75,23 @@
                 android:id="@+id/textView35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dialog TV"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="24dp"
+                android:text="Xysd Mobile"
                 android:textColor="#014590"
                 android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView34"
-                app:layout_constraintEnd_toEndOf="@+id/textView34"
-                app:layout_constraintHorizontal_bias="0.09"
-                app:layout_constraintStart_toStartOf="@+id/textView34"
-                app:layout_constraintTop_toTopOf="@+id/textView34"
-                app:layout_constraintVertical_bias="0.488" />
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toTopOf="@+id/textView34" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="91dp"
                 android:layout_height="78dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="72dp"
                 android:foreground="@drawable/dtv_logo"
-                app:layout_constraintBottom_toBottomOf="@+id/textView34"
-                app:layout_constraintEnd_toEndOf="@+id/textView34"
-                app:layout_constraintHorizontal_bias="0.885"
-                app:layout_constraintStart_toEndOf="@+id/textView35"
-                app:layout_constraintTop_toTopOf="@+id/textView34"
-                app:layout_constraintVertical_bias="0.468" />
+                app:layout_constraintStart_toStartOf="@+id/textView34"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
             <TextView
                 android:id="@+id/textView36"
@@ -107,7 +100,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/credit_card_add_background"
+                android:background="#E5E7E9"
                 android:text=""
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -118,26 +111,23 @@
                 android:id="@+id/textView37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="24dp"
                 android:text="Lanka Bell"
                 android:textColor="#014590"
                 android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView36"
-                app:layout_constraintEnd_toEndOf="@+id/textView36"
-                app:layout_constraintHorizontal_bias="0.074"
-                app:layout_constraintStart_toStartOf="@+id/textView36"
-                app:layout_constraintTop_toTopOf="@+id/textView36"
-                app:layout_constraintVertical_bias="0.488" />
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/textView36" />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="91dp"
                 android:layout_height="78dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="56dp"
                 android:foreground="@drawable/lb_logo"
-                app:layout_constraintBottom_toBottomOf="@+id/textView36"
-                app:layout_constraintEnd_toEndOf="@+id/textView36"
-                app:layout_constraintHorizontal_bias="0.858"
-                app:layout_constraintStart_toEndOf="@+id/textView37"
-                app:layout_constraintTop_toTopOf="@+id/textView36" />
+                app:layout_constraintStart_toStartOf="@+id/textView36"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
             <TextView
                 android:id="@+id/textView38"
@@ -146,7 +136,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/credit_card_add_background"
+                android:background="#E5E7E9"
                 android:text=""
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -157,26 +147,23 @@
                 android:id="@+id/textView39"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CEB"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="24dp"
+                android:text="Dialog Mobile"
                 android:textColor="#014590"
                 android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView38"
-                app:layout_constraintEnd_toEndOf="@+id/textView38"
-                app:layout_constraintHorizontal_bias="0.081"
-                app:layout_constraintStart_toStartOf="@+id/textView38"
-                app:layout_constraintTop_toTopOf="@+id/textView38"
-                app:layout_constraintVertical_bias="0.511" />
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toTopOf="@+id/textView38" />
 
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="91dp"
                 android:layout_height="78dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="52dp"
                 android:foreground="@drawable/ceb_logo"
-                app:layout_constraintBottom_toBottomOf="@+id/textView38"
-                app:layout_constraintEnd_toEndOf="@+id/textView38"
-                app:layout_constraintHorizontal_bias="0.884"
-                app:layout_constraintStart_toEndOf="@+id/textView39"
-                app:layout_constraintTop_toTopOf="@+id/textView38" />
+                app:layout_constraintStart_toStartOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
             <TextView
                 android:id="@+id/textView40"
@@ -185,7 +172,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="28dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/credit_card_add_background"
+                android:background="#E5E7E9"
                 android:text=""
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -194,106 +181,125 @@
 
             <TextView
                 android:id="@+id/textView41"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="LECO"
+                android:layout_width="109dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="24dp"
+                android:text="Dialog Mobile"
                 android:textColor="#014590"
                 android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView40"
-                app:layout_constraintEnd_toEndOf="@+id/textView40"
-                app:layout_constraintHorizontal_bias="0.08"
-                app:layout_constraintStart_toStartOf="@+id/textView40"
-                app:layout_constraintTop_toTopOf="@+id/textView40"
-                app:layout_constraintVertical_bias="0.523" />
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="@+id/textView40" />
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="91dp"
                 android:layout_height="78dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="68dp"
                 android:foreground="@drawable/leco_logo"
-                app:layout_constraintBottom_toBottomOf="@+id/textView40"
-                app:layout_constraintEnd_toEndOf="@+id/textView40"
-                app:layout_constraintHorizontal_bias="0.879"
-                app:layout_constraintStart_toEndOf="@+id/textView41"
-                app:layout_constraintTop_toTopOf="@+id/textView40" />
+                app:layout_constraintStart_toStartOf="@+id/textView40"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
-            <TextView
-                android:id="@+id/textView42"
-                android:layout_width="0dp"
-                android:layout_height="110dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/credit_card_add_background"
-                android:text=""
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView40" />
-
-            <TextView
-                android:id="@+id/textView43"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="SLT"
-                android:textColor="#014590"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView42"
-                app:layout_constraintEnd_toEndOf="@+id/textView42"
-                app:layout_constraintHorizontal_bias="0.063"
-                app:layout_constraintStart_toStartOf="@+id/textView42"
-                app:layout_constraintTop_toTopOf="@+id/textView42"
-                app:layout_constraintVertical_bias="0.581" />
-
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="91dp"
-                android:layout_height="78dp"
-                android:foreground="@drawable/slt_logo"
-                app:layout_constraintBottom_toBottomOf="@+id/textView42"
-                app:layout_constraintEnd_toEndOf="@+id/textView42"
-                app:layout_constraintHorizontal_bias="0.879"
-                app:layout_constraintStart_toEndOf="@+id/textView43"
-                app:layout_constraintTop_toTopOf="@+id/textView42" />
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="44dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/arrow_64"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/textView9" />
 
             <TextView
                 android:id="@+id/textView45"
-                android:layout_width="0dp"
-                android:layout_height="110dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/credit_card_add_background"
-                android:text=""
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView42" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:text="0719998881"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
             <TextView
                 android:id="@+id/textView46"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mobitel"
-                android:textColor="#014590"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView45"
-                app:layout_constraintEnd_toEndOf="@+id/textView45"
-                app:layout_constraintHorizontal_bias="0.063"
-                app:layout_constraintStart_toStartOf="@+id/textView45"
-                app:layout_constraintTop_toTopOf="@+id/textView45"
-                app:layout_constraintVertical_bias="0.581" />
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:text="0719998881"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
-            <ImageView
-                android:id="@+id/imageView15"
-                android:layout_width="91dp"
-                android:layout_height="78dp"
-                android:foreground="@drawable/mobitel_logo"
-                app:layout_constraintBottom_toBottomOf="@+id/textView45"
-                app:layout_constraintEnd_toEndOf="@+id/textView45"
-                app:layout_constraintHorizontal_bias="0.879"
-                app:layout_constraintStart_toEndOf="@+id/textView46"
-                app:layout_constraintTop_toTopOf="@+id/textView45" />
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:text="0719998881"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:text="0719998881"
+                app:layout_constraintStart_toEndOf="@+id/imageView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            <TextView
+                android:id="@+id/textView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="20dp"
+                android:text="0719998881"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="44dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/arrow_64"
+                app:layout_constraintEnd_toEndOf="@+id/textView34"
+                app:layout_constraintTop_toTopOf="@+id/textView34" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="44dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/arrow_64"
+                app:layout_constraintEnd_toEndOf="@+id/textView36"
+                app:layout_constraintTop_toTopOf="@+id/textView36" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="44dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/arrow_64"
+                app:layout_constraintEnd_toEndOf="@+id/textView38"
+                app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="44dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/arrow_64"
+                app:layout_constraintEnd_toEndOf="@+id/textView40"
+                app:layout_constraintTop_toTopOf="@+id/textView40" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

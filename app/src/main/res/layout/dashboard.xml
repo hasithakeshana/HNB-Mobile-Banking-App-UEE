@@ -111,8 +111,8 @@
         android:id="@+id/billPayments"
         android:layout_width="97dp"
         android:layout_height="99dp"
-        android:background="@drawable/investdash"
-        android:onClick="billPaymentDetails"
+        android:background="@drawable/icon_bill_payments"
+        android:onClick="ratingInterface"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.114"
@@ -137,7 +137,7 @@
         android:onClick="viewCreditCards"
         android:layout_width="97dp"
         android:layout_height="99dp"
-        android:background="@drawable/viewdash"
+        android:background="@drawable/icon_credit_cards"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
@@ -197,6 +197,7 @@
         android:id="@+id/button10"
         android:layout_width="55dp"
         android:layout_height="54dp"
+        android:onClick="billPaymentDetails"
         android:background="@drawable/g1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -207,14 +208,14 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="374dp"
-        android:layout_height="267dp"
+        android:layout_width="387dp"
+        android:layout_height="346dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146"
+        app:layout_constraintVertical_bias="0.1"
         app:srcCompat="@drawable/rec_home" />
 
     <TextView
@@ -228,7 +229,7 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
+        app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10"
         app:layout_constraintVertical_bias="0.0" />
@@ -276,7 +277,7 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button10"
         app:layout_constraintVertical_bias="0.0" />

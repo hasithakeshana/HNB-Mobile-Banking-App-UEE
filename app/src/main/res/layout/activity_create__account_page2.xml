@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/default_project_background"
+    android:background="@color/dark_blue"
     tools:context=".Create_Account_page2">
 
     <ScrollView
@@ -20,37 +20,19 @@
             android:layout_height="wrap_content">
 
 
-            <ImageView
-                android:id="@+id/logo_background"
-                android:layout_width="0dp"
-                android:layout_height="90dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@color/logo_background" />
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_constraintBottom_toBottomOf="@+id/logo_background"
-                app:layout_constraintEnd_toEndOf="@+id/logo_background"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/logo_background"
-                app:srcCompat="@drawable/header" />
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/inner_layout"
-                android:layout_width="0dp"
-                android:layout_height="540dp"
+                android:layout_width="338dp"
+                android:layout_height="595dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="116dp"
                 android:layout_marginEnd="20dp"
                 app:cardBackgroundColor="@color/default_light_gray_background"
                 app:cardCornerRadius="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.484"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/logo_background">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/constraintLayout2"
@@ -63,7 +45,7 @@
                         android:id="@+id/next_button"
                         android:layout_width="145dp"
                         android:layout_height="49dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="16dp"
                         android:background="@drawable/nxtbtn"
                         android:onClick="openNext"
                         android:text="@string/defualt_empty"
@@ -94,21 +76,23 @@
                         app:srcCompat="@drawable/text_input_field" />
 
                     <ImageView
-                        android:id="@+id/debit_limit_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/lable_debit_limit"
-                        app:srcCompat="@drawable/text_input_field" />
-
-                    <ImageView
                         android:id="@+id/credit_limit_field"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/lable_credit_limit"
+                        app:srcCompat="@drawable/text_input_field" />
+
+                    <ImageView
+                        android:id="@+id/debit_limit_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lable_debit_limit"
                         app:srcCompat="@drawable/text_input_field" />
 
                     <EditText
@@ -125,8 +109,10 @@
                         android:textColor="@color/Black"
                         app:layout_constraintBottom_toBottomOf="@+id/account_name_field"
                         app:layout_constraintEnd_toEndOf="@+id/account_name_field"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="@+id/account_name_field"
-                        app:layout_constraintTop_toTopOf="@+id/account_name_field" />
+                        app:layout_constraintTop_toTopOf="@+id/account_name_field"
+                        app:layout_constraintVertical_bias="0.0" />
 
                     <EditText
                         android:id="@+id/text_debit_limit"
@@ -158,15 +144,7 @@
                         app:layout_constraintEnd_toEndOf="@id/credit_limit_field"
                         app:layout_constraintStart_toStartOf="@id/credit_limit_field"
                         app:layout_constraintTop_toTopOf="@id/credit_limit_field"
-                        tools:text="100000.00" /><![CDATA[
-
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/credit_limit_field" />
-
-
-
-
-                    ]]>
+                        tools:text="100000.00" />
 
                     <ImageView
                         android:id="@+id/account_type_field"
@@ -175,7 +153,29 @@
                         android:layout_marginStart="10dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@id/lable_account_type"
-                        app:srcCompat="@drawable/text_input_field" />
+                        app:srcCompat="@drawable/text_input_field" /><![CDATA[
+
+
+
+
+
+
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/credit_limit_field" />
+
+
+
+
+
+
+
+
+
+
+
+
+                    ]]>
 
                     <ImageView
                         android:id="@+id/currency_field"
@@ -200,8 +200,11 @@
                         android:textColor="@color/Black"
                         app:layout_constraintBottom_toBottomOf="@id/currency_field"
                         app:layout_constraintEnd_toEndOf="@id/currency_field"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="@id/currency_field"
-                        app:layout_constraintTop_toTopOf="@id/currency_field" />
+                        app:layout_constraintTop_toBottomOf="@+id/lable_over_daft_limit"
+                        app:layout_constraintVertical_bias="1.0" />
+
 
                     <Spinner
                         android:id="@+id/text_account_type"
@@ -216,31 +219,32 @@
                         android:textColor="@color/Black"
                         app:layout_constraintBottom_toBottomOf="@id/account_type_field"
                         app:layout_constraintEnd_toEndOf="@id/account_type_field"
+                        app:layout_constraintHorizontal_bias="1.0"
                         app:layout_constraintStart_toStartOf="@id/account_type_field"
-                        app:layout_constraintTop_toTopOf="@id/account_type_field" />
+                        app:layout_constraintTop_toTopOf="@id/account_type_field"
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
                         android:id="@+id/lable_account_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="128dp"
                         android:text="@string/account_name"
                         android:textColor="@color/default_text_colour"
-                        android:textSize="20dp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/page_heading" />
-
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/lable_account_type"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
                         android:text="@string/account_type"
                         android:textColor="@color/default_text_colour"
-                        android:textSize="20dp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/account_name_field" />
 
@@ -248,10 +252,11 @@
                         android:id="@+id/lable_debit_limit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
                         android:text="@string/debit_limit"
                         android:textColor="@color/default_text_colour"
-                        android:textSize="20dp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/credit_limit_field" />
 
@@ -259,10 +264,11 @@
                         android:id="@+id/lable_over_daft_limit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
                         android:text="@string/currency"
                         android:textColor="@color/default_text_colour"
-                        android:textSize="20dp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/text_account_type" />
 
@@ -270,10 +276,11 @@
                         android:id="@+id/lable_credit_limit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
                         android:text="@string/credit_limit"
                         android:textColor="@color/default_text_colour"
-                        android:textSize="20dp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/text_currency" />
 
@@ -281,15 +288,47 @@
                         android:id="@+id/page_heading"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="30dp"
                         android:text="@string/select_account_details"
-                        android:textColor="@color/default_text_colour"
-                        android:textSize="27dp"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toTopOf="@+id/lable_account_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.627"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.818" />
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="106dp"
+                        android:layout_height="82dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/page_heading"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.557"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/bankac" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView27"
+                android:layout_width="98dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="154dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="157dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toTopOf="@+id/inner_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/logo" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

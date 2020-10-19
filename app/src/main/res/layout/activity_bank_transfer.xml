@@ -9,18 +9,22 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="261dp"
-        android:layout_height="43dp"
-        android:background="@drawable/button"
+        android:layout_width="318dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/ripple_effect_rate_btn"
         android:onClick="showPopupMsg"
+        android:shadowColor="#00110303"
         android:text="Transfer"
+        android:textAllCaps="false"
         android:textColor="@color/dark_blue"
-        android:textSize="8pt"
+        android:textColorLink="#C51162"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintStart_toStartOf="parent"></Button>
+
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/transferViewPager"

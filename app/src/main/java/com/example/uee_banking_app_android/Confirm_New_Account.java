@@ -54,7 +54,7 @@ public class Confirm_New_Account extends AppCompatActivity {
 
 
     private void init(){
-        name.setText(pageTwoData[0]);
+        name.setText("Hey " +pageTwoData[0]);
         owner.setText(pageOneData[1]);
         branch.setText(pageOneData[2]);
         currency.setText(getCurrencyByIndex(Integer.parseInt(pageTwoData[2])));

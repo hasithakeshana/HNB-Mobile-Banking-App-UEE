@@ -4,9 +4,9 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:textColor">@color/Black</item>
-        <item name="colorPrimary">#E19F1A</item>
-        <item name="colorPrimaryDark">#E19F1A</item>
-        <item name="colorAccent">#E19F1A</item>
+        <item name="colorPrimary">#2ea2ce</item>
+        <item name="colorPrimaryDark">#2ea2ce</item>
+        <item name="colorAccent">#36e4ff</item>
 
 
 <!--        <item name="android:windowActivityTransitions">true</item>-->
@@ -15,7 +15,13 @@
     </style>
 
     <style name ="account_background" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@drawable/bg</item>
+
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+
+        <item name="colorControlNormal">@color/colorActive</item>
+        <item name="colorControlActivated">@color/colorStand</item>
     </style>
 
 <!--    <style name="WindowAnimationStyle">-->

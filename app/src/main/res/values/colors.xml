@@ -14,6 +14,9 @@
     <color name="light_orange"> #e0ff45</color>
     <color name="sky_blue"> #87cefa</color>
 
+    <color name="colorActive"> #d4d4d4</color>
+    <color name="colorStand"> #F8BF1C</color>
+
 
 
 

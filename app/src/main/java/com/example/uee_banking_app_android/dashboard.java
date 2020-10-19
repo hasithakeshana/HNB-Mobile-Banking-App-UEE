@@ -49,8 +49,9 @@ public class dashboard extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void changePassword(View view){
-        Intent intent = new Intent(this, settings_change_password.class);
+    public void ratingInterface(View view){
+        Intent intent = new Intent(this, RatingActivity.class);
         startActivity(intent);
     }
+
 }

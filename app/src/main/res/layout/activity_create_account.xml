@@ -12,62 +12,97 @@
         android:layout_height="match_parent"
         android:background="@drawable/bg"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="180dp">
+        tools:layout_editor_absoluteX="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
             <ImageView
-                android:id="@+id/logo_background"
-                android:layout_width="0dp"
-                android:layout_height="90dp"
+                android:id="@+id/imageView20"
+                android:layout_width="39dp"
+                android:layout_height="77dp"
+                app:layout_constraintBottom_toBottomOf="@+id/inner_layout"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/addacc" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="146dp"
+                android:layout_height="39dp"
+                app:layout_constraintBottom_toTopOf="@+id/inner_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.46"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@color/logo_background" />
+                app:layout_constraintVertical_bias="0.084"
+                app:srcCompat="@drawable/logo" />
 
-
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                app:layout_constraintBottom_toBottomOf="@id/logo_background"
-                app:layout_constraintEnd_toEndOf="@+id/logo_background"
-                app:layout_constraintStart_toStartOf="@id/logo_background"
-                app:layout_constraintTop_toTopOf="@id/logo_background"
-                app:srcCompat="@drawable/header" />
-
+            <TextView
+                android:id="@+id/account_under_head2"
+                android:layout_width="205dp"
+                android:layout_height="34dp"
+                android:background="@color/see_through_background"
+                android:text="Create Account"
+                android:textColor="@color/dark_blue"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/inner_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.548"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/inner_layout"
-                android:layout_width="0dp"
-                android:layout_height="385dp"
+                android:layout_width="340dp"
+                android:layout_height="450dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="100dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
                 app:cardBackgroundColor="@color/default_light_gray_background"
                 app:cardCornerRadius="30dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/logo_background"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintTop_toBottomOf="@+id/imageView22">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="352dp"
+                    android:layout_height="526dp"
                     android:layout_marginTop="20dp">
 
+
+                    <Button
+                        android:id="@+id/next_button"
+                        android:layout_width="137dp"
+                        android:layout_height="47dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@drawable/nxtbtn"
+                        android:onClick="openNext"
+                        android:text="@string/defualt_empty"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/branch_field" />
+
+                    <Button
+                        android:id="@+id/back_button"
+                        android:layout_width="127dp"
+                        android:layout_height="47dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/cancelbtn"
+                        android:onClick="openback"
+                        android:text="@string/defualt_empty"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.21"
+                        app:layout_constraintStart_toEndOf="@+id/next_button" />
 
                     <ImageView
                         android:id="@+id/name_field"
                         android:layout_width="283dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
+                        android:layout_marginTop="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/account_under_head"
                         app:srcCompat="@drawable/text_input_field" />
@@ -77,7 +112,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="20dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/name_field"
                         app:srcCompat="@drawable/text_input_field" />
@@ -87,22 +122,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="30dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="8dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/branch_head"
                         app:srcCompat="@drawable/text_input_field" />
-
-                    <Button
-                        android:id="@+id/next_button"
-                        android:layout_width="137dp"
-                        android:layout_height="47dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="40dp"
-                        android:background="@drawable/nxtbtn"
-                        android:onClick="openNext"
-                        android:text="@string/defualt_empty"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/branch_field" />
 
                     <EditText
                         android:id="@+id/text_name"
@@ -120,19 +143,6 @@
                         app:layout_constraintEnd_toEndOf="@id/name_field"
                         app:layout_constraintStart_toStartOf="@id/name_field"
                         app:layout_constraintTop_toTopOf="@id/name_field" />
-
-                    <Button
-                        android:id="@+id/back_button"
-                        android:layout_width="127dp"
-                        android:layout_height="47dp"
-                        android:layout_marginStart="20dp"
-                        android:background="@drawable/cancelbtn"
-                        android:onClick="openback"
-                        android:text="@string/defualt_empty"
-                        app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.21"
-                        app:layout_constraintStart_toEndOf="@+id/next_button" />
 
                     <EditText
                         android:id="@+id/text_branch"
@@ -171,29 +181,39 @@
 
                     <TextView
                         android:id="@+id/branch_head"
-                        android:layout_width="205dp"
-                        android:layout_height="34dp"
+                        android:layout_width="192dp"
+                        android:layout_height="25dp"
                         android:layout_marginStart="30dp"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="16dp"
                         android:background="@color/see_through_background"
                         android:text=" Branch"
                         android:textColor="@color/default_text_colour"
-                        android:textSize="25dp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/nic_field" />
 
                     <TextView
                         android:id="@+id/account_under_head"
-                        android:layout_width="205dp"
-                        android:layout_height="34dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_width="210dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="100dp"
                         android:background="@color/see_through_background"
                         android:text=" Account Under"
                         android:textColor="@color/default_text_colour"
-                        android:textSize="25dp"
+                        android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="147dp"
+                        android:layout_height="106dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/bankac"
+                        tools:layout_editor_absoluteY="-19dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
