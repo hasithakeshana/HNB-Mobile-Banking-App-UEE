@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class ComposeMessage extends AppCompatActivity {
 
-    private EditText composeMsg;
+    private EditText composeMsg,composeSubj;
    // private Button btnSend;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +21,16 @@ public class ComposeMessage extends AppCompatActivity {
 
        // btnSend = findViewById(R.id.btnSend);
         composeMsg = findViewById(R.id.input1);
+        composeSubj = findViewById(R.id.enterMsg);
 
 
     }
 
 
     public void sendMsg(View view) {
-        if (composeMsg.getText().toString().isEmpty()) {
+        if (composeMsg.getText().toString().isEmpty()|| composeMsg.getText().toString().isEmpty()) {
 
-            Toast.makeText(getApplicationContext(),"Please Enter a Message", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Please Enter a Message with subject and body", Toast.LENGTH_LONG).show();
 
         } else {
             Intent intent = new Intent(this, MessageSent.class);
