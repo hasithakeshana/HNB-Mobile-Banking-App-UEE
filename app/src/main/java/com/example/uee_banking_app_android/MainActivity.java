@@ -7,18 +7,25 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private DBHelper dbHelper;
     private EditText usernameInput;
     private EditText passwordInput;
     private android.widget.EditText edtPassword;
     public static Boolean autoFill = true;    //Auto fill Login
+    private Button buttonSubmit;
+
+    private AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +34,16 @@ public class MainActivity extends AppCompatActivity {
 
         usernameInput = findViewById(R.id.username);
         passwordInput = findViewById(R.id.password);
+
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        buttonSubmit = (Button) findViewById(R.id.loginBtn);
+
+        //adding validation to edittexts
+        awesomeValidation.addValidation(this, R.id.username, "^[A-Za-z\\s]{1,}[\\.]{0,1}[A-Za-z\\s]{0,}$", R.string.usrerror);
+        awesomeValidation.addValidation(this, R.id.password, "^[A-Za-z\\s]{1,}[\\.]{0,1}[A-Za-z\\s]{0,}$", R.string.pwderror);
+
+        buttonSubmit.setOnClickListener(this);
 
         if(autoFill)
         {
@@ -55,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         edtPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
     }
 
-    public void login(View view) {
+    public void login() {
         SQLiteDatabase DB = dbHelper.getReadableDatabase();
         Cursor cursor = DB.rawQuery("SELECT * FROM users",null);
         cursor.moveToFirst();
@@ -102,5 +119,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         Toast.makeText(getApplicationContext(), "Back button is disabled in this Screen", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (awesomeValidation.validate()) {
+            login();
+        }
     }
 }

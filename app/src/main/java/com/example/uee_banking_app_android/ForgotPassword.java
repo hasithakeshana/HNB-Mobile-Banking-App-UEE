@@ -7,23 +7,36 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-public class ForgotPassword extends AppCompatActivity {
-    
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.basgeekball.awesomevalidation.ValidationStyle;
+
+public class ForgotPassword extends AppCompatActivity implements View.OnClickListener{
+    private Button buttonSubmit;
     NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
 
+    private AwesomeValidation awesomeValidation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_password);
 
+        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+
+        buttonSubmit = (Button) findViewById(R.id.frgtPwdBtn);
+
+        //adding validation to edittexts
+        awesomeValidation.addValidation(this, R.id.forgotPwdEmail, Patterns.EMAIL_ADDRESS, R.string.emailerror);
+
+        buttonSubmit.setOnClickListener(this);
+
     }
 
-    public void Submit(View view)
+    public void Submit()
     {
         addNotification();
         Intent intent = new Intent(this,ResetInstructions.class);
@@ -40,6 +53,13 @@ public class ForgotPassword extends AppCompatActivity {
         // Add as notification
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(0, builder.build());
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view == buttonSubmit) {
+            Submit();
+        }
     }
 
     /**

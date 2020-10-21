@@ -117,5 +117,16 @@
     </string-array>
 
 
+    <string name="fnameerror">Enter a valid first name</string>
+    <string name="emailerror">Enter a valid email</string>
+    <string name="lnameerror">Enter a valid lastname</string>
+    <string name="pwderror">Enter a password</string>
+    <string name="usrerror">Enter a username</string>
+
+
+    <string name="oldpwderr">This password does not match with current password</string>
+    <string name="newpwderr">Enter a valid password</string>
+    <string name="confpwderror">Passwords do not match</string>
+
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
