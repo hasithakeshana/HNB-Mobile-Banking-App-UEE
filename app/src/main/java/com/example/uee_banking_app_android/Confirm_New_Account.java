@@ -82,9 +82,9 @@ public class Confirm_New_Account extends AppCompatActivity {
     }
 
     public void confirm(View view){
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, AlertDialog.THEME_DEVICE_DEFAULT_DARK);
-        builder.setTitle("Confromation Message");
-        builder.setMessage("Account Repuest has been made an e-mail will be sent to your email within 3 to 5 working days");
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
+        builder.setTitle("Confirmation Message");
+        builder.setMessage("Account Request has been made an e-mail will be sent to your email within 3 to 5 working days");
         builder.setPositiveButton("confirm", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {

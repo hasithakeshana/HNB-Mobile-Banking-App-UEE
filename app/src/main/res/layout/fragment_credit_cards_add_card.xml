@@ -7,6 +7,7 @@
     tools:context=".credit_cards_add_card">
 
 
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
@@ -163,51 +164,43 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.919" />
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anima3"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="92dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.851">
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/visa_purple" />
 
-        <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/visa_ic"
-            android:text=""
-            android:textOff=""
-            android:textOn=""
-            android:checked="true"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="96dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anima4"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/anima5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/american_express" />
 
-        <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/master_ic"
-            android:text=""
-            android:textOff=""
-            android:textOn=""
-            android:checked="false"
-            tools:layout_editor_absoluteX="161dp"
-            tools:layout_editor_absoluteY="96dp" />
-
-        <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/american_ic"
-            android:text=""
-            android:textOff=""
-            android:textOn=""
-            android:checked="false"
-            tools:layout_editor_absoluteX="280dp"
-            tools:layout_editor_absoluteY="100dp" />
-
-    </RadioGroup>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anima5"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toEndOf="@+id/anima3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/master_card" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

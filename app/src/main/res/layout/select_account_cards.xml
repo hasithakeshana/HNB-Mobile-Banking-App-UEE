@@ -5,6 +5,7 @@
     android:id="@+id/parent_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:elevation="10dp"
     android:orientation="vertical">
 
 
@@ -20,8 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="203dp"
             android:scaleType="fitXY"
-            app:cardBackgroundColor="@color/dark_blue"
-            app:cardCornerRadius="25dp"
+            app:cardBackgroundColor="@color/design_default_color_primary_dark"
+            app:cardCornerRadius="20dp"
             app:cardElevation="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

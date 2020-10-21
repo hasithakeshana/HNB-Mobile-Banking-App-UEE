@@ -2,6 +2,7 @@ package com.example.uee_banking_app_android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -105,7 +106,10 @@ public class RatingActivity extends AppCompatActivity {
         btnfeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              // Toast.makeText(RatingActivity.this, "Thank you for rated us!", Toast.LENGTH_LONG).show();
+               Toast.makeText(RatingActivity.this, "Thank you for rated us!", Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(RatingActivity.this,dashboard.class);
+                startActivity(intent);
             }
         });
 

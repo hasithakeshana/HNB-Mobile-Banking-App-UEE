@@ -16,9 +16,9 @@ public class BillPaymentsPagesAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position){
         switch(position){
             case 0:
-                return new BillMyProviders();
-            case 1:
                 return new BillAddProvider();
+            case 1:
+                return new BillMyProviders();
             default:
                 return null;
         }

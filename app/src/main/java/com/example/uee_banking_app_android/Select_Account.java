@@ -62,10 +62,5 @@ public class Select_Account extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @Override
-    public void onBackPressed(){
-        Intent intent = new Intent(this, dashboard.class);
-        startActivity(intent);
-    }
 
 }

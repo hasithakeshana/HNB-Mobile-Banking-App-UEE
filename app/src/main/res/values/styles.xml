@@ -18,6 +18,14 @@
 
     </style>
 
+    <style name="nav_theme">
+        <item name="colorPrimary">@color/dark_blue</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="listPreferredItemHeightSmall">50dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="iconSize">25dp</item>
+    </style>
+
     <style name="RatingBar" parent="Theme.AppCompat">
 
         <item name="colorControlNormal">@color/colorActive</item>
@@ -28,5 +36,7 @@
 <!--        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>-->
 <!--        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>-->
 <!--    </style>-->
+
+
 
 </resources>

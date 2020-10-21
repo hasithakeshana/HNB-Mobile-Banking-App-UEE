@@ -81,6 +81,10 @@ public class AccountDetails extends AppCompatActivity {
         }
     }
 
+    public void goBack(View view){
+        Intent intent = new Intent(this, Select_Account.class);
+        startActivity(intent);
+    }
     public void openTrans(View view){
         Intent intent = new Intent(this, TransactionHistory.class);
         intent.putExtra("Name",accName);

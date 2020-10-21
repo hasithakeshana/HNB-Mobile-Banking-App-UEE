@@ -135,10 +135,10 @@ public class credit_cards extends AppCompatActivity {
     //    /**
 //     * Disabling back button
 //     */
-    @Override
-    public void onBackPressed() {
-        Toast.makeText(getApplicationContext(), "Back button is disabled in this Screen", Toast.LENGTH_LONG).show();
-    }
+//    @Override
+//    public void onBackPressed() {
+//        Toast.makeText(getApplicationContext(), "Back button is disabled in this Screen", Toast.LENGTH_LONG).show();
+//    }
 
     public void backToDashboard(View view) {
         Intent intent = new Intent(this, dashboard.class);

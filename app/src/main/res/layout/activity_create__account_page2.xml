@@ -43,12 +43,13 @@
 
                     <Button
                         android:id="@+id/next_button"
-                        android:layout_width="145dp"
-                        android:layout_height="49dp"
+                        android:layout_width="111dp"
+                        android:layout_height="40dp"
                         android:layout_marginTop="16dp"
-                        android:background="@drawable/nxtbtn"
+                        android:background="@drawable/ripple_effect_rate_btn"
                         android:onClick="openNext"
-                        android:text="@string/defualt_empty"
+                        android:text="Next"
+                        android:textColor="@color/dark_blue"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/back_button"
                         app:layout_constraintStart_toStartOf="parent"
@@ -56,12 +57,13 @@
 
                     <Button
                         android:id="@+id/back_button"
-                        android:layout_width="134dp"
-                        android:layout_height="50dp"
+                        android:layout_width="111dp"
+                        android:layout_height="40dp"
                         android:layout_marginStart="2dp"
-                        android:background="@drawable/cancelbtn"
+                        android:background="@drawable/ripple_effect_rate_btn"
                         android:onClick="back"
-                        android:text="@string/defualt_empty"
+                        android:text="cancel"
+                        android:textColor="@color/dark_blue"
                         app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/next_button" />
@@ -99,6 +101,7 @@
                         android:id="@+id/text_account_name"
                         android:layout_width="0dp"
                         android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
                         android:background="@color/see_through_background"
                         android:hint="eg - Rashmika Gamage"
                         android:inputType="text|textCapSentences"
@@ -229,12 +232,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="128dp"
+                        android:layout_marginTop="16dp"
                         android:text="@string/account_name"
                         android:textColor="@color/default_text_colour"
                         android:textSize="18sp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toBottomOf="@+id/anima" />
 
                     <TextView
                         android:id="@+id/lable_account_type"
@@ -284,32 +287,19 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/text_currency" />
 
-                    <TextView
-                        android:id="@+id/page_heading"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/select_account_details"
-                        android:textColor="@color/dark_blue"
-                        android:textSize="20sp"
-                        app:layout_constraintBottom_toTopOf="@+id/lable_account_name"
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anima"
+                        android:layout_width="264dp"
+                        android:layout_height="97dp"
+                        android:layout_marginBottom="10dp"
+                        app:layout_constraintBottom_toTopOf="@+id/account_under_head"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.627"
+                        app:layout_constraintHorizontal_bias="0.507"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.818" />
-
-                    <ImageView
-                        android:id="@+id/imageView26"
-                        android:layout_width="106dp"
-                        android:layout_height="82dp"
-                        android:layout_marginTop="8dp"
-                        app:layout_constraintBottom_toTopOf="@+id/page_heading"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.557"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="1.0"
-                        app:srcCompat="@drawable/bankac" />
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/moneyfall" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
@@ -318,16 +308,15 @@
                 android:id="@+id/imageView27"
                 android:layout_width="98dp"
                 android:layout_height="36dp"
-                android:layout_marginStart="154dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="157dp"
-                android:layout_marginBottom="64dp"
+                android:layout_marginStart="146dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="180dp"
+                android:layout_marginBottom="77dp"
                 app:layout_constraintBottom_toTopOf="@+id/inner_layout"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
                 app:srcCompat="@drawable/logo" />
 
 

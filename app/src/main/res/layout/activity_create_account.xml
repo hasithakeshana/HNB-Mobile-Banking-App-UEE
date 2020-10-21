@@ -8,217 +8,230 @@
     tools:context=".CreateAccount">
 
     <ScrollView
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg"
+        tools:layout_editor_absoluteX="-51dp"
+        tools:layout_editor_absoluteY="-242dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="437dp"
+        android:layout_height="861dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bg"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="16dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-            <ImageView
-                android:id="@+id/imageView20"
-                android:layout_width="39dp"
-                android:layout_height="77dp"
-                app:layout_constraintBottom_toBottomOf="@+id/inner_layout"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/addacc" />
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="146dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="151dp"
+            android:layout_marginBottom="53dp"
+            app:layout_constraintBottom_toTopOf="@+id/account_under_head3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
 
-            <ImageView
-                android:id="@+id/imageView22"
-                android:layout_width="146dp"
-                android:layout_height="39dp"
-                app:layout_constraintBottom_toTopOf="@+id/inner_layout"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.46"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.084"
-                app:srcCompat="@drawable/logo" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/inner_layout"
+            android:layout_width="340dp"
+            android:layout_height="500dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardBackgroundColor="@color/default_light_gray_background"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView22"
+            app:layout_constraintVertical_bias="0.444">
 
-            <TextView
-                android:id="@+id/account_under_head2"
-                android:layout_width="205dp"
-                android:layout_height="34dp"
-                android:background="@color/see_through_background"
-                android:text="Create Account"
-                android:textColor="@color/dark_blue"
-                android:textSize="25dp"
-                app:layout_constraintBottom_toBottomOf="@+id/inner_layout"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.548"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/inner_layout"
-                android:layout_width="340dp"
-                android:layout_height="450dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginEnd="20dp"
-                app:cardBackgroundColor="@color/default_light_gray_background"
-                app:cardCornerRadius="30dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView22">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="352dp"
-                    android:layout_height="526dp"
-                    android:layout_marginTop="20dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="350dp"
+                android:layout_height="549dp"
+                android:layout_marginTop="5dp">
 
 
-                    <Button
-                        android:id="@+id/next_button"
-                        android:layout_width="137dp"
-                        android:layout_height="47dp"
-                        android:layout_marginStart="28dp"
-                        android:layout_marginTop="32dp"
-                        android:background="@drawable/nxtbtn"
-                        android:onClick="openNext"
-                        android:text="@string/defualt_empty"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/branch_field" />
+                <Button
+                    android:id="@+id/next_button"
+                    android:layout_width="137dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="32dp"
+                    android:height="10dp"
+                    android:background="@drawable/ripple_effect_rate_btn"
+                    android:onClick="openNext"
+                    android:text="Next"
+                    android:textColor="@color/dark_blue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/branch_field" />
 
-                    <Button
-                        android:id="@+id/back_button"
-                        android:layout_width="127dp"
-                        android:layout_height="47dp"
-                        android:layout_marginStart="20dp"
-                        android:background="@drawable/cancelbtn"
-                        android:onClick="openback"
-                        android:text="@string/defualt_empty"
-                        app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.21"
-                        app:layout_constraintStart_toEndOf="@+id/next_button" />
+                <ImageView
+                    android:id="@+id/branch_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/branch_head"
+                    app:srcCompat="@drawable/text_input_field" />
 
-                    <ImageView
-                        android:id="@+id/name_field"
-                        android:layout_width="283dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="16dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/account_under_head"
-                        app:srcCompat="@drawable/text_input_field" />
+                <ImageView
+                    android:id="@+id/name_field"
+                    android:layout_width="283dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/account_under_head"
+                    app:srcCompat="@drawable/text_input_field" />
 
-                    <ImageView
-                        android:id="@+id/nic_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="20dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/name_field"
-                        app:srcCompat="@drawable/text_input_field" />
+                <ImageView
+                    android:id="@+id/nic_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/name_field"
+                    app:srcCompat="@drawable/text_input_field" />
 
-                    <ImageView
-                        android:id="@+id/branch_field"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="8dp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/branch_head"
-                        app:srcCompat="@drawable/text_input_field" />
+                <Button
+                    android:id="@+id/back_button"
+                    android:layout_width="125dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/ripple_effect_rate_btn"
+                    android:onClick="openback"
+                    android:text="Cancel"
+                    android:textColor="@color/dark_blue"
+                    app:layout_constraintBaseline_toBaselineOf="@+id/next_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.075"
+                    app:layout_constraintStart_toEndOf="@+id/next_button" />
 
-                    <EditText
-                        android:id="@+id/text_name"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:background="@color/see_through_background"
-                        android:hint="@string/name"
-                        android:inputType="textPersonName|text"
-                        android:maxLines="1"
-                        android:paddingStart="20dp"
-                        android:paddingTop="4dp"
-                        android:textColor="@color/Black"
-                        android:textColorHint="@color/default_project_background"
-                        app:layout_constraintBottom_toBottomOf="@id/name_field"
-                        app:layout_constraintEnd_toEndOf="@id/name_field"
-                        app:layout_constraintStart_toStartOf="@id/name_field"
-                        app:layout_constraintTop_toTopOf="@id/name_field" />
+                <EditText
+                    android:id="@+id/text_name"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/see_through_background"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName|text"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/default_project_background"
+                    app:layout_constraintBottom_toBottomOf="@id/name_field"
+                    app:layout_constraintEnd_toEndOf="@id/name_field"
+                    app:layout_constraintStart_toStartOf="@id/name_field"
+                    app:layout_constraintTop_toTopOf="@id/name_field" />
 
-                    <EditText
-                        android:id="@+id/text_branch"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:background="@color/see_through_background"
-                        android:hint="defualt - Koswatta"
-                        android:imeOptions="actionDone"
-                        android:inputType="text|textCapSentences"
-                        android:maxLines="1"
-                        android:paddingStart="20dp"
-                        android:paddingTop="4dp"
-                        android:textColor="@color/Black"
-                        android:textColorHint="@color/default_project_background"
-                        app:layout_constraintBottom_toBottomOf="@id/branch_field"
-                        app:layout_constraintEnd_toEndOf="@id/branch_field"
-                        app:layout_constraintStart_toStartOf="@id/branch_field"
-                        app:layout_constraintTop_toTopOf="@id/branch_field" />
+                <EditText
+                    android:id="@+id/text_branch"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/see_through_background"
+                    android:hint="defualt - Koswatta"
+                    android:imeOptions="actionDone"
+                    android:inputType="text|textCapSentences"
+                    android:maxLines="1"
+                    android:paddingStart="20dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/default_project_background"
+                    app:layout_constraintBottom_toBottomOf="@id/branch_field"
+                    app:layout_constraintEnd_toEndOf="@id/branch_field"
+                    app:layout_constraintStart_toStartOf="@id/branch_field"
+                    app:layout_constraintTop_toTopOf="@id/branch_field" />
 
-                    <EditText
-                        android:id="@+id/text_nic"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:background="@color/see_through_background"
-                        android:hint="@string/nic"
-                        android:inputType="textCapSentences"
-                        android:paddingStart="20dp"
-                        android:paddingTop="4dp"
-                        android:textColor="@color/Black"
-                        android:textColorHint="@color/default_project_background"
-                        app:layout_constraintBottom_toBottomOf="@id/nic_field"
-                        app:layout_constraintEnd_toEndOf="@id/nic_field"
-                        app:layout_constraintStart_toStartOf="@id/nic_field"
-                        app:layout_constraintTop_toTopOf="@id/nic_field" />
+                <EditText
+                    android:id="@+id/text_nic"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/see_through_background"
+                    android:hint="@string/nic"
+                    android:inputType="textCapSentences"
+                    android:paddingStart="20dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/default_project_background"
+                    app:layout_constraintBottom_toBottomOf="@id/nic_field"
+                    app:layout_constraintEnd_toEndOf="@id/nic_field"
+                    app:layout_constraintStart_toStartOf="@id/nic_field"
+                    app:layout_constraintTop_toTopOf="@id/nic_field" />
 
 
-                    <TextView
-                        android:id="@+id/branch_head"
-                        android:layout_width="192dp"
-                        android:layout_height="25dp"
-                        android:layout_marginStart="30dp"
-                        android:layout_marginTop="16dp"
-                        android:background="@color/see_through_background"
-                        android:text=" Branch"
-                        android:textColor="@color/default_text_colour"
-                        android:textSize="18sp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/nic_field" />
+                <TextView
+                    android:id="@+id/branch_head"
+                    android:layout_width="192dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/see_through_background"
+                    android:text=" Branch"
+                    android:textColor="@color/default_text_colour"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nic_field" />
 
-                    <TextView
-                        android:id="@+id/account_under_head"
-                        android:layout_width="210dp"
-                        android:layout_height="0dp"
-                        android:layout_marginStart="28dp"
-                        android:layout_marginTop="100dp"
-                        android:background="@color/see_through_background"
-                        android:text=" Account Under"
-                        android:textColor="@color/default_text_colour"
-                        android:textSize="18sp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/account_under_head"
+                    android:layout_width="210dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="148dp"
+                    android:background="@color/see_through_background"
+                    android:text=" Account Under"
+                    android:textColor="@color/default_text_colour"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                    <ImageView
-                        android:id="@+id/imageView23"
-                        android:layout_width="147dp"
-                        android:layout_height="106dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.502"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:srcCompat="@drawable/bankac"
-                        tools:layout_editor_absoluteY="-19dp" />
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/anima"
+                    android:layout_width="154dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="101dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="101dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toTopOf="@+id/account_under_head"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/data" />
 
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/account_under_head3"
+            android:layout_width="260dp"
+            android:layout_height="43dp"
+            android:background="@color/see_through_background"
+            android:text="Few steps to add your account"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.188" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

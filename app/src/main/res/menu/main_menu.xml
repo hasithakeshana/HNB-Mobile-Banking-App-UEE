@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        />
+
+</group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/b"
+                    android:title="Change Password"
+                    android:icon="@drawable/passchange"/>
+                <item
+                    android:id="@+id/d"
+                    android:title="Three Factor Auth"
+                    android:icon="@drawable/twofac"/>
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Payments">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/e"
+                    android:title="QR Scan"
+                    android:icon="@drawable/qr"
+                    />
+                <item
+                    android:id="@+id/f"
+                    android:title="Contact Us"
+                    android:icon="@drawable/contact"/>
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Before Leave">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/rate"
+                    android:title="Rate Us"
+                    android:icon="@drawable/rate"/>
+                <item
+                    android:id="@+id/logout"
+                    android:title="Sign Us"
+                    android:icon="@drawable/logout"/>
+            </group>
+        </menu>
+
+    </item>
+
+    <item android:title="Sign Out">
+        <menu>
+            <group android:checkableBehavior="none">
+
+            </group>
+        </menu>
+
+    </item>
+</menu>
