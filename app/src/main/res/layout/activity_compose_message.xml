@@ -30,7 +30,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="35dp"
             android:contentDescription="@string/account_information"
-            android:src="@drawable/compMsg1" />
+            android:src="@drawable/comsg1" />
 
         <EditText
             android:id="@+id/enterMsg"
