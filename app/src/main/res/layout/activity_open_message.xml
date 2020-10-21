@@ -5,6 +5,65 @@
     android:id="@+id/constraint"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/message_blur"
+    android:background="@drawable/bg"
     android:onClick="viewMessages"
-    tools:context=".OpenMessage" />
+    tools:context=".OpenMessage" >
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="233dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/otp_border"
+        android:text="  Request Password Change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toEndOf="@+id/textView60"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView60"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="268dp"
+        android:text="  Subject :"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="68dp"
+        android:text="Body : "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView60"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="236dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/otp_border"
+        android:text=" My password was change a couple of months back, However I cannot seem to remember my previous password. Can I get instructions of what must be done?"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toEndOf="@+id/textView61"
+        app:layout_constraintTop_toBottomOf="@+id/textView56"
+        app:layout_constraintVertical_bias="0.672" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="41dp"
+        android:layout_height="32dp"
+        android:background="@drawable/check_ic"
+        android:onClick="viewMessages"
+        tools:layout_editor_absoluteX="179dp"
+        tools:layout_editor_absoluteY="582dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

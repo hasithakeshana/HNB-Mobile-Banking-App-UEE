@@ -4,19 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/messagesentblur"
+    android:background="@drawable/bg"
     tools:context=".MessageSent">
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="63dp"
-        android:layout_height="43dp"
+        android:layout_width="50dp"
+        android:layout_height="39dp"
         android:background="@drawable/check_ic"
         android:onClick="ok"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.611" />
+        app:layout_constraintVertical_bias="0.667" />
+
+    <Button
+        android:id="@+id/submit2"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:background="@drawable/redCross"
+        android:onClick="ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.667" />
+
+    <TextView
+        android:id="@+id/messageSentTv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="264dp"
+        android:text="Message has been sent"
+        android:textSize="25dp"
+        android:textColor="@color/dark_blue"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/messageSentTv2"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="64dp"
+        android:textColor="@color/dark_blue"
+        android:text="We shall get back to you shortly, Happy Banking!"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageSentTv1"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

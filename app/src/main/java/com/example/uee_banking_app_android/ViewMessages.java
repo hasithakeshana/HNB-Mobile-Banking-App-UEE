@@ -38,6 +38,11 @@ public class ViewMessages extends AppCompatActivity {
 
     }
 
+    public void dashboard(View view){
+
+        Intent intent = new Intent(this,dashboard.class);
+        startActivity(intent);
+    }
 
 
     /**

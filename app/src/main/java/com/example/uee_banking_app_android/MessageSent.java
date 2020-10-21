@@ -21,6 +21,11 @@ public class MessageSent extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void NotOkay(View view)
+    {
+        Intent intent = new Intent(this,ComposeMessage.class);
+        startActivity(intent);
+    }
 
 
 
