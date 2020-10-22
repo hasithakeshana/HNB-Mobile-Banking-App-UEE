@@ -47,16 +47,16 @@
         android:id="@+id/textView62"
         android:layout_width="236dp"
         android:layout_height="109dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/otp_border"
         android:text=" My password was change a couple of months back, However I cannot seem to remember my previous password. Can I get instructions of what must be done?"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toEndOf="@+id/textView61"
         app:layout_constraintTop_toBottomOf="@+id/textView56"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintVertical_bias="0.217" />
 
     <Button
         android:id="@+id/button12"
@@ -80,4 +80,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.148"
         app:srcCompat="@drawable/logo" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="375dp"
+        android:layout_height="452dp"
+        android:background="@drawable/l_commonborder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView21"
+        app:layout_constraintVertical_bias="0.372" />
 </androidx.constraintlayout.widget.ConstraintLayout>
