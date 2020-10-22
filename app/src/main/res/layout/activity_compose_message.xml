@@ -34,7 +34,7 @@
 
         <EditText
             android:id="@+id/enterMsg"
-            android:layout_width="350dp"
+            android:layout_width="309dp"
             android:layout_height="46dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
@@ -65,11 +65,11 @@
 
             <EditText
                 android:id="@+id/input1"
-                android:layout_width="350dp"
+                android:layout_width="309dp"
                 android:layout_height="165dp"
                 android:background="@drawable/composemsg_border"
-                android:imeOptions="actionNext"
                 android:hint="Type here"
+                android:imeOptions="actionNext"
                 android:textColor="@color/Black"
                 android:textSize="18sp"
                 android:textStyle="italic"
@@ -83,7 +83,8 @@
             android:layout_marginTop="9dp"
             android:gravity="center"
             android:orientation="horizontal"/>
-        <!--   <TextView
+
+           <TextView
                android:id="@+id/rateBar"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
@@ -92,7 +93,7 @@
                android:layout_marginLeft="57dp"
                android:text="Rate Us*"
                android:textColor="#3C3C3C"
-               andrtextSize="22sp" />
+               android:textSize="22sp" />
 
           <RatingBar
                android:id="@+id/rating"
@@ -100,7 +101,7 @@
                android:layout_height="wrap_content"
                android:saveEnabled="true"
                android:layout_marginLeft="57dp"
-               android:numStars="5"/> -->
+               android:numStars="5"/>
 
         <Button
             android:id="@+id/btnSend"
