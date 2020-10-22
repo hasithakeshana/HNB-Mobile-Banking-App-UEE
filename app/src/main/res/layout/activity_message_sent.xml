@@ -24,7 +24,7 @@
         android:id="@+id/submit2"
         android:layout_width="45dp"
         android:layout_height="39dp"
-        android:background="@drawable/redcross"
+        android:background="@drawable/redcros"
         android:onClick="NotOkay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
