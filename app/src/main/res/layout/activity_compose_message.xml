@@ -93,7 +93,8 @@
                android:layout_marginTop="5dp"
                android:layout_marginLeft="57dp"
                android:text="Rate Us*"
-               android:textColor="#3C3C3C"
+               android:textStyle="bold"
+               android:textColor="#FF4500"
                android:textSize="22sp" />
 
           <RatingBar
