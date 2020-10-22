@@ -39,7 +39,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:background="@drawable/composemsg_border"
-            android:hint=" Subject"
+            android:hint="  Subject"
             android:textColor="#3C3C3C"
             android:textSize="18sp"
             android:textStyle="italic" />
@@ -67,13 +67,14 @@
                 android:id="@+id/input1"
                 android:layout_width="309dp"
                 android:layout_height="165dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"
                 android:background="@drawable/composemsg_border"
-                android:hint="Type here"
-                android:imeOptions="actionNext"
+                android:hint="  Type here"
                 android:textColor="@color/Black"
                 android:textSize="18sp"
                 android:textStyle="italic"
-                tools:ignore="LabelFor" />
+                />
 
         </LinearLayout>
 
