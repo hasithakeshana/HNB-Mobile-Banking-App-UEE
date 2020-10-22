@@ -20,6 +20,7 @@ public class MessageSent extends AppCompatActivity {
         Intent intent = new Intent(this,ViewMessages.class);
         startActivity(intent);
         Toast.makeText(getApplicationContext(), "Message Sent", Toast.LENGTH_LONG).show();
+        this.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
     }
     public void NotOkay(View view)
@@ -27,6 +28,7 @@ public class MessageSent extends AppCompatActivity {
         Intent intent = new Intent(this,ComposeMessage.class);
         startActivity(intent);
         Toast.makeText(getApplicationContext(), "Type the message again", Toast.LENGTH_LONG).show();
+        this.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 
 
