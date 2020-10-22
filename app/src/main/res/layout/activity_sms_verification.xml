@@ -41,7 +41,8 @@
             android:text="Enter your One Time Password (OTP):"
             android:textAlignment="center"
             android:textColor="#3C3C3C"
-            android:textSize="18sp" />
+            android:textStyle="bold"
+            android:textSize="20sp" />
 
 
         <LinearLayout
