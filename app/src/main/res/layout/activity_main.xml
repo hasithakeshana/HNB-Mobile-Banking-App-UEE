@@ -5,8 +5,22 @@
     style="@style/Widget.AppCompat.Spinner.Underlined"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_credits"
+    android:background="@drawable/bg"
     tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="385dp"
+        android:layout_height="479dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/account_card_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
 
     <Button
         android:id="@+id/loginBtn"
@@ -19,10 +33,10 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <Button
         android:id="@+id/button13"
@@ -41,10 +55,10 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="298dp"
+        android:layout_height="41dp"
         android:layout_weight="1"
-        android:background="@drawable/usename"
+        android:background="@drawable/txtbox"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
@@ -54,17 +68,16 @@
         android:textColorHint="#3C3C3C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.418" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="wrap_content"
+        android:layout_width="298dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="172dp"
-        android:background="@drawable/password"
+        android:background="@drawable/txtbox"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -76,6 +89,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username"
         app:layout_constraintVertical_bias="0.275" />
+
+    <ImageView
+        android:id="@+id/padlockImgView"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="144dp"
+        android:background="@drawable/loginicon"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:onClick="forgotPassword"
+        android:text="Forgot Password?"
+        android:textColor="#3C3C3C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/Register"
@@ -92,19 +135,15 @@
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintVertical_bias="0.193" />
 
-    <TextView
-        android:id="@+id/forgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:onClick="forgotPassword"
-        android:text="Forgot Password?"
-        android:textColor="#3C3C3C"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

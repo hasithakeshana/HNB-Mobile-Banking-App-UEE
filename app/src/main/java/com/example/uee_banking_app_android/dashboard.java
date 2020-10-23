@@ -117,6 +117,8 @@ public class dashboard extends AppCompatActivity implements NavigationView.OnNav
                 break;
             case R.id.rate : Intent intent = new Intent(this,RatingActivity.class); startActivity(intent);
                 break;
+            case R.id.b : Intent chngPwd = new Intent(this, settings_change_password.class); startActivity(chngPwd);
+                break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;

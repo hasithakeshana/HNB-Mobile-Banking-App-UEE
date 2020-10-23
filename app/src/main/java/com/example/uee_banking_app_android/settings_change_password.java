@@ -7,8 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
@@ -21,6 +24,9 @@ public class settings_change_password  extends AppCompatActivity  implements Vie
     private android.widget.EditText confPwd;
 
     private Button buttonSubmit;
+
+    private Animation zoomAnimation;
+    private ImageView chngPwdLockImg;
 
     private AwesomeValidation awesomeValidation;
 
@@ -35,6 +41,11 @@ public class settings_change_password  extends AppCompatActivity  implements Vie
 
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
+        chngPwdLockImg = (ImageView) findViewById(R.id.pwdChngIcon);
+
+        zoomAnimation = AnimationUtils.loadAnimation(this,R.anim.zoomin);
+        chngPwdLockImg.startAnimation(zoomAnimation);
+
         //adding validation to edittexts
         awesomeValidation.addValidation(this, R.id.editTxtOldPwd, "thanos", R.string.oldpwderr);
         awesomeValidation.addValidation(this, R.id.editTxtNewPwd, "newpassword", R.string.newpwderr);
@@ -45,8 +56,8 @@ public class settings_change_password  extends AppCompatActivity  implements Vie
 
     }
 
-    public void mainMenu(View view){
-        Intent intent = new Intent(this,menu_screen.class);
+    public void mainMenu(){
+        Intent intent = new Intent(this,dashboard.class);
         startActivity(intent);
     }
 
@@ -76,6 +87,7 @@ public class settings_change_password  extends AppCompatActivity  implements Vie
             public void onClick(View view) {
                 refreshPage(null);
                 Toast.makeText(getApplicationContext(), "Successfully updated", Toast.LENGTH_LONG).show();
+                mainMenu();
             }
         });
         myDialog.show();

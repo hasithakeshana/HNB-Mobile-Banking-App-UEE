@@ -15,7 +15,7 @@ public class ResetInstructions extends AppCompatActivity {
         setContentView(R.layout.activity_reset_instructions);
     }
 
-    public void ok(View view)
+    public void toLogin(View view)
     {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);

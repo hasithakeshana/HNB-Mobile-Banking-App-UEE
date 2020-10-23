@@ -15,7 +15,7 @@ public class LoginDetailsMessage extends AppCompatActivity {
         setContentView(R.layout.activity_login_details_message);
     }
 
-    public void ok(View view)
+    public void toLogin(View view)
     {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
