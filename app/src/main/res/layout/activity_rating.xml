@@ -68,9 +68,8 @@
             android:layout_marginTop="20dp"
             android:text="Rate The Service"
             android:textAlignment="center"
-            android:textColor="#848484"
-            android:textSize="20sp">
-        </TextView>
+            android:textColor="#1B35C9"
+            android:textSize="28sp"></TextView>
 
         <RatingBar
             android:id="@+id/rateStars"
@@ -92,8 +91,7 @@
             android:text="Good Enough"
             android:textAlignment="center"
             android:textColor="#848484"
-            android:textSize="32sp">
-        </TextView>
+            android:textSize="25sp"></TextView>
 
 
     </LinearLayout>

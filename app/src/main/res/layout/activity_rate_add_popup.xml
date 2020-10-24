@@ -39,7 +39,7 @@
         android:layout_height="54dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="72dp"
-        android:text="Thank you for Rated"
+        android:text="Thank you for your feedback"
         android:textAlignment="center"
         android:textColor="#014590"
         android:textSize="18dp"

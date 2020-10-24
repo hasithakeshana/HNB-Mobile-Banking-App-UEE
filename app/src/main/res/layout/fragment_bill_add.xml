@@ -41,7 +41,7 @@
                 android:layout_marginTop="24dp"
                 android:text="Dialog Mobile "
                 android:textColor="#014590"
-                android:textSize="18dp"
+                android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView7"
                 app:layout_constraintTop_toTopOf="@+id/textView9" />
 
@@ -79,7 +79,7 @@
                 android:layout_marginTop="24dp"
                 android:text="Xysd Mobile"
                 android:textColor="#014590"
-                android:textSize="18dp"
+                android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView8"
                 app:layout_constraintTop_toTopOf="@+id/textView34" />
 
@@ -115,7 +115,7 @@
                 android:layout_marginTop="24dp"
                 android:text="Lanka Bell"
                 android:textColor="#014590"
-                android:textSize="18dp"
+                android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView9"
                 app:layout_constraintTop_toTopOf="@+id/textView36" />
 
@@ -151,7 +151,7 @@
                 android:layout_marginTop="24dp"
                 android:text="Dialog Mobile"
                 android:textColor="#014590"
-                android:textSize="18dp"
+                android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView11"
                 app:layout_constraintTop_toTopOf="@+id/textView38" />
 
@@ -181,13 +181,13 @@
 
             <TextView
                 android:id="@+id/textView41"
-                android:layout_width="109dp"
-                android:layout_height="20dp"
+                android:layout_width="117dp"
+                android:layout_height="35dp"
                 android:layout_marginStart="48dp"
                 android:layout_marginTop="24dp"
-                android:text="Dialog Mobile"
+                android:text="Dialog Mob"
                 android:textColor="#014590"
-                android:textSize="18dp"
+                android:textSize="20dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView12"
                 app:layout_constraintTop_toTopOf="@+id/textView40" />
 
