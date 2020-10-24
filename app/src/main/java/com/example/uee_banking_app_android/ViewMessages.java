@@ -27,6 +27,7 @@ public class ViewMessages extends AppCompatActivity {
     {
         Intent intent = new Intent(this,ComposeMessage.class);
         startActivity(intent);
+        this.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
 
     }
 
@@ -38,6 +39,12 @@ public class ViewMessages extends AppCompatActivity {
 
     }
 
+    public void dashboard(View view){
+
+        Intent intent = new Intent(this,dashboard.class);
+        startActivity(intent);
+        this.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+    }
 
 
     /**

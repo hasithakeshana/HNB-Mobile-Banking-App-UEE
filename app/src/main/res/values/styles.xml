@@ -32,6 +32,11 @@
         <item name="colorControlActivated">@color/colorStand</item>
     </style>
 
+    <style name="RBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#2E37FE</item>
+        <item name="colorControlActivated">#FFD700</item>
+    </style>
+
 <!--    <style name="WindowAnimationStyle">-->
 <!--        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>-->
 <!--        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>-->

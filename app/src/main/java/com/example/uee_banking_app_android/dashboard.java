@@ -109,6 +109,11 @@ public class dashboard extends AppCompatActivity implements NavigationView.OnNav
         startActivity(intent);
     }
 
+    public void contactUs(View view){
+        Intent intent = new Intent(this,ComposeMessage.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
